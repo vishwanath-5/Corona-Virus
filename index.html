@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaVirus - Information</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Nanum+Gothic&family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: url("bg.jpg") no-repeat center center/cover;
+        }
+        /* NAVBAR */
+        
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 0 23px;
+            background-color: black;
+        }
+        
+        nav h2 {
+            color: white;
+            margin-right: 20px;
+            font-family: "Righteous", sans-serif;
+        }
+        
+        nav ul {
+            display: flex;
+        }
+        
+        .item {
+            list-style: none;
+            padding: 3px 8px;
+        }
+        
+        .item a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 10px;
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Baloo Thambi 2", system-ui;
+        }
+        
+        .item a:hover {
+            background: white;
+            color: black;
+            border-radius: 24px;
+        }
+        /* MAIN CONTAINER */
+        
+        .container {
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 70%;
+            background-color: white;
+            border-radius: 12px;
+            min-height: 100vh;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .box {
+            margin-bottom: 30px;
+        }
+        /* HEADINGS */
+        
+        h1,
+        h2,
+        h3 {
+            font-family: "Righteous", sans-serif;
+            padding: 15px 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        /* TEXT */
+        
+        p,
+        ul li {
+            font-family: "Nanum Gothic", sans-serif;
+            line-height: 1.8;
+        }
+        
+        ul li {
+            margin: 8px 0;
+        }
+        /* FAQ */
+        
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #273038;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        /* RESPONSIVE */
+        
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;
+                padding: 20px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .item {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>COVID INFO</h2>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">MHFW Website</a></li>
+            <li class="item"><a href="#">Hospitals</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="box">
+            <h1>Covid 19 - Stay Home Stay Safe</h1>
+            <h2>Coronavirus disease 2019 (COVID-19)</h2>
+
+            <p>
+                Coronavirus disease (COVID-19) is an infectious disease caused by SARS-CoV-2. It was first identified in Wuhan, China in 2019 and later declared a global pandemic by the World Health Organization (WHO) in March 2020. The disease affected millions of lives
+                worldwide and had major impacts on health, economy, and daily life.
+            </p>
+        </div>
+
+        <!-- PROTECTION -->
+        <div class="box">
+            <h2>How to Protect Yourself</h2>
+
+            <h3>Do’s</h3>
+            <ul>
+                <li>Cover your nose and mouth while sneezing or coughing.</li>
+                <li>Wash hands frequently with soap or sanitizer.</li>
+                <li>Consult a doctor if you feel unwell.</li>
+                <li>Sneeze into your elbow, not hands.</li>
+                <li>Avoid crowded places.</li>
+                <li>Maintain social distance.</li>
+                <li>Take proper rest and sleep.</li>
+                <li>Drink water and eat healthy food.</li>
+            </ul>
+
+            <h3>Don’ts</h3>
+            <ul>
+                <li>Do not touch your face unnecessarily.</li>
+                <li>Avoid shaking hands.</li>
+                <li>Do not spit in public.</li>
+                <li>Do not self-medicate.</li>
+                <li>Do not litter used tissues.</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="box">
+            <h2>FAQ's - Frequently Asked Questions</h2>
+
+            <div class="question">
+                <p><strong>1. What is SARS-CoV-2?</strong></p>
+                <p>SARS-CoV-2 is a novel coronavirus first identified in 2019, responsible for COVID-19.</p>
+            </div>
+
+            <div class="question">
+                <p><strong>2. What is COVID-19?</strong></p>
+                <p>COVID-19 is a respiratory illness caused by SARS-CoV-2.</p>
+            </div>
+
+            <div class="question">
+                <p><strong>3. Where did COVID-19 start?</strong></p>
+                <p>It was first reported in Wuhan, China.</p>
+            </div>
+
+            <div class="question">
+                <p><strong>4. What are the symptoms?</strong></p>
+                <p>Common symptoms include fever, cough, fatigue, and loss of taste or smell.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
